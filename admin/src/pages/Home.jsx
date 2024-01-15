@@ -25,11 +25,11 @@ const Home = () => {
   return (
     <div className="welcome">
     <div className="welcome-box">
-      <h1>Welcome Admin😊</h1>
+      <h1 className='text-white'>Welcome Admin😊</h1>
 
       <form onSubmit={toP}>
         <div className={alert ? "alert" : ""}>
-        <p>{alert}</p>
+        <p className='text-danger p-0'>{alert}</p>
         </div>
        
         <br/>
