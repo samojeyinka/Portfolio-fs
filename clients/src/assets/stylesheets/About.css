@@ -1,0 +1,133 @@
+
+
+.about-flex{
+    padding: 5rem 1rem;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+  }
+  
+  
+  .about-left h2{
+    font-size: 2.3rem;
+    font-weight: 800;
+  }
+  
+  .about-text{
+    padding: 2.1rem 0;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  
+  .about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+  }
+  
+  .image-box{
+    width: 26rem;
+    height: 22rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    transform: rotate(4deg);
+  }
+  
+  .image-box img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .social-box{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  
+  .social-icons{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .social-icons .s-icon{
+    font-size: 1.4rem;
+    color: var(--text-low);
+  }
+  
+  .social-cmd{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+  
+  .social-cmd h4{
+    font-size: .95rem;
+    color: var(--text-high);
+  }
+  
+  .email-touch{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+  
+  .email-touch .et-icon{
+    font-size: 1.4rem;
+    color: var(--text-low);
+  }
+  
+  
+  
+  @media screen and (max-width:1200px){
+  
+    .about-left h2{
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width:900px){
+    .about-flex{
+      padding: 3rem 1rem;
+      width: 95%;
+      flex-direction: column;
+    }
+    .about-left h2{
+      font-size: 2rem;
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .about-flex{
+      width: 100%;
+    }
+    .about-left h2{
+      font-size: 1.5rem;
+    }
+  
+    .image-box{
+      margin: auto;
+    }
+    
+  }
+  
+  
+  @media screen and (max-width:500px){
+
+    .about-flex{
+      padding-bottom: 7rem;
+      overflow: hidden
+    }
+    
+    .about-left h2{
+      font-size: 1.2 rem;
+    }
+  }

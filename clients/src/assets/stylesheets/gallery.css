@@ -1,0 +1,36 @@
+
+.gallery{
+    padding: 2rem 0;
+    overflow: hidden;
+    }
+    
+    .gallery-flex{
+      display: flex;
+      gap:1.3rem;
+    }
+    
+    .photo-box{
+      width: 90%;
+      height: 20rem;
+      border-radius: 2rem;
+      overflow: hidden;
+    }
+    
+    .photo-box img{
+      width: 100%;
+      height: 100%;
+    }
+    
+    .photo3{
+      transform: rotate(-3deg);
+    }
+    
+    .photo2{
+      transform: rotate(3deg);
+    }
+    
+    @media screen and (max-width:700px){
+      .photo5{
+        display: none;
+      }
+    }

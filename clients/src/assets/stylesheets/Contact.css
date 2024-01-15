@@ -1,0 +1,68 @@
+
+
+.contact-page{
+    padding-bottom:2rem;
+    width: 60%;
+    min-height: 100vh;
+    margin: auto ;
+  }
+  
+   .other-c{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+  
+   .other-c h4{
+    display: flex;
+    gap: .6rem;
+    color: var(--text-low);
+  }
+  
+   .form-con {
+    padding: 2rem 0;
+  }
+  
+  
+  .form-con textarea {
+    padding: 1rem;
+    width: 100%;
+    min-height: 20rem;
+    max-height: 20rem;
+    color: var(--text-high);
+    background: var(--secondary-color);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    outline: none;
+  }
+  
+   .form-con button{
+    margin-top: 1rem;
+    padding: .8rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: var(--partial-color);
+    border-radius: .5rem;
+    color: var(--text-high);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border: 2px solid var(--border-color);
+  
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    .contact-page{
+      width: 90%;
+      padding-bottom:7rem;
+    }
+  
+    .form-con textarea {
+      padding: 1rem;
+      width: 100%;
+      min-height: 20rem;
+      max-height: 20rem;
+      
+    }
+  }
+  

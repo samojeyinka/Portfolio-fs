@@ -1,0 +1,134 @@
+.articles{
+    padding: 3rem 0;
+    width: 80%;
+    min-height: 100vh;
+    margin: auto ;
+  }
+  
+  .articles h2{
+    width: 80%;
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+  
+  .articles p{
+    padding: 1.5rem 0;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  
+  .articles-flex{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    position: relative;
+  }
+  
+  .articles-flex::before{
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: var(--border-color);
+  position: absolute;
+  left: -2%;
+  top: 0;
+  }
+  
+  .article-box{
+    width: 100%;
+    display: flex;
+    gap:4rem;
+  }
+  
+  .article-date{
+    width: 20%;
+    padding-top: 2rem;
+  }
+  
+  .article-date p{
+    font-size: .9rem;
+  }
+  
+  .article-content{
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .article-content:hover{
+    background: var(--partial-color);
+  }
+  
+  .article-content h4{
+    font-size: 1.17rem;
+  }
+  
+  .article-content p{
+    font-size: .9rem;
+  }
+  .article-content button{
+    text-align: left;
+    background:none ;
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--tertiary-color);
+  }
+  
+  
+  @media screen and (max-width:800px){
+    .articles{
+      padding-bottom: 6rem;
+      width: 95%;
+    }
+    .articles h2{
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    .articles p{
+      padding: 1.5rem 0;
+      width: 95%;
+    }
+    .articles-flex{
+      margin: 0rem 0;
+   
+    }
+  
+    .articles-flex::before{
+      display: none;
+      }
+  
+    .article-box{
+      gap: 1rem;
+      flex-direction: column;
+    }
+  
+    .article-date{
+      width: 100%;
+    }
+  
+    .article-date p{
+      position: relative;
+    }
+    .article-date p:before{
+      content: '|';
+      background: var(--border-color);
+      position: absolute;
+      bottom: 39%;
+      left: -5px;
+    }  
+    .article-content{
+      padding: 1rem;
+      width: 100%;
+      gap: 0rem;
+    }
+    
+  }
+  
