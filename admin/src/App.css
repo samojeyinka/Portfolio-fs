@@ -11,6 +11,7 @@ body{
     color: #fff;
 }
 
+
 button{
     padding: .5rem 2rem;
     color: #fff;
@@ -86,6 +87,10 @@ border: 2px solid #2a26267d;
    color: #fff;
 } 
 
+
+.dashboard .tab-content{
+    width: 80%;
+}
 
 
 @media screen and (max-width: 768px) {
