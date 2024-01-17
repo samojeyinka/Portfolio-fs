@@ -1,0 +1,129 @@
+
+.project-show{
+    width: 100%;
+  }
+  
+  .ps-flex{
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .ps-top{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .pst-left{
+    width: 40%;
+  }
+  
+  .pst-right{
+    width: 60%;
+  }
+  
+  .p-image{
+    width: 35rem;
+    height: 28rem;
+    border: 10px double var(--border-color);
+  }
+  
+  .p-image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pst-left b{
+    color: var(--text-low);
+  }
+  
+  .pst-left h3{
+    padding: 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+  
+  .pst-left p{
+    font-size: 1.1rem;
+    color: var(--text-high);
+  }
+  
+  .ps-btns{
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .ps-btns button{
+    padding: .9rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  }
+  
+  .ps-btns .live{
+  background: var(--tertiary-color);
+  }
+  
+  .ps-btns .code{
+    background: var(--partial-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-high);
+    
+    }
+  
+    .ps-bottom{
+      width: 70%;
+      margin: auto;
+    }
+  
+    .ps-bottom .details{
+      font-size: 1.2rem;
+      color: var(--text-high);
+      line-height: 2rem;
+    }
+  
+   
+    @media screen and (max-width: 1200px){
+      .pst-left,.pst-right{
+        width: 80%;
+      }
+      .ps-top{
+        flex-direction: column-reverse;
+      }
+    }
+  
+  
+    @media screen and (max-width: 868px){
+      .ps-flex{
+        gap: 0rem;
+      }
+      .ps-top{
+        flex-direction: column-reverse;
+      }
+      .pst-left,.pst-right{
+        width: 100%;
+      }
+  
+      .p-image{
+        width: 100%;
+        height: 25rem;
+      }
+  
+      .ps-bottom{
+        width: 95%;
+      }
+    
+      .ps-bottom .details{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+      }
+      
+      .ps-btns button{
+        padding: .9rem 2rem;
+        font-size: 1.05rem;
+      }
+    }

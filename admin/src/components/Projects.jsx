@@ -52,7 +52,7 @@ const Projects = () => {
                             <p className="pj-description">{project.description}</p>
                             <div className="a-btns">
                             <Link to={`/projects/${project.name.replace(/ /g,'-')}?id=${project.id}`}>View project</Link>
-                            <Link to={`/projects/edit?id=${project.id}`}><button className='btn btn-info text-white'>Edit</button></Link> 
+                            <Link to={`/projects/edit/id=${project.id}`}><button className='btn btn-info text-white'>Edit</button></Link> 
                       <button
                         className='btn btn-danger'
                         onClick={() => handleDelete(project.id)}>Delete</button>

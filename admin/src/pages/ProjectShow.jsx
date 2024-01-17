@@ -1,8 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
 import ProjectShowPart from '../components/ProjectShow';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import '../assets/stylesheets/ProjectShow.css';
 
 const ProjectShow = () => {
@@ -50,7 +48,7 @@ getProject();
    
   return (
     <>
-    <Header/>
+
     <section className="project-show">
             <ProjectShowPart 
             createdAt={createdAt}
@@ -64,7 +62,7 @@ getProject();
             />
     </section>
     <br/>
-    <Footer/>
+    
     </>
   )
 }

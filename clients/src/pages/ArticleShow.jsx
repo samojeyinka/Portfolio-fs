@@ -3,8 +3,7 @@ import axios from 'axios';
 import ArticleShowPart from '../components/ArticleShow';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
-
+import '../assets/stylesheets/ArticleShow.css';
 
 
 
