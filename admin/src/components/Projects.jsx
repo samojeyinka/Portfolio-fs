@@ -21,6 +21,14 @@ const Projects = () => {
     }
   }
   
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3000/api/v1/projects/${id}`);
+      window.location.reload();
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   useEffect(() => {
     fetchProjects();
@@ -42,7 +50,13 @@ const Projects = () => {
                             </div>
                             <h4 className="pj-title">{project.name}</h4>
                             <p className="pj-description">{project.description}</p>
+                            <div className="a-btns">
                             <Link to={`/projects/${project.name.replace(/ /g,'-')}?id=${project.id}`}>View project</Link>
+                            <Link to={`/projects/edit?id=${project.id}`}><button className='btn btn-info text-white'>Edit</button></Link> 
+                      <button
+                        className='btn btn-danger'
+                        onClick={() => handleDelete(project.id)}>Delete</button>
+                        </div>
                         </div>
 ))}
                     </div>

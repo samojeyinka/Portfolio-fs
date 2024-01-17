@@ -64,8 +64,8 @@ const Articles = () => {
                     <h4>{article.title}</h4>
                     <p>{truncateString(article.content, 200)}</p>
                     <div className="a-btns">
-                      <Link to={`${article.title.replace(/ /g, '-')}?id=${article.id}`}><button>Read article <FaGreaterThan size={10} /></button></Link>
-                      <button className='btn btn-info text-white'>Edit <FaGreaterThan size={10} /></button>
+                      <Link to={`/articles/${article.title.replace(/ /g, '-')}?id=${article.id}`}><button>Read article <FaGreaterThan size={10} /></button></Link>
+                     <Link to={`/articles/edit?id=${article.id}`}><button className='btn btn-info text-white'>Edit <FaGreaterThan size={10} /></button></Link> 
                       <button
                         className='btn btn-danger'
                         onClick={() => handleDelete(article.id)}
