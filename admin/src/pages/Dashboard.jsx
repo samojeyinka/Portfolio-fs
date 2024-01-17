@@ -2,6 +2,7 @@ import React from 'react'
 import Projects from '../components/Projects'
 import Articles from '../components/Articles'
 import NewProject from '../components/NewProject'
+import NewArticle from '../components/NewArticle'
 
 const Dashboard = () => {
   return (
@@ -31,7 +32,11 @@ const Dashboard = () => {
         <NewProject/>
       </div>
     </div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">New Article</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+      <div className="new-article-tab">
+        <NewArticle/>
+      </div>
+    </div>
   </div>
   </div>
 </div>

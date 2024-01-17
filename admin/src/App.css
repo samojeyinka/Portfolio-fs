@@ -109,3 +109,9 @@ border: 2px solid #2a26267d;
 
 
 
+
+.form-group label{
+color: #fff;
+font-size: 1.1rem;
+font-weight: 600;
+}
