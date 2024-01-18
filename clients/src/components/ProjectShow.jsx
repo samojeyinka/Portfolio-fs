@@ -14,8 +14,8 @@ const ProjectShow = ({name,description,details,createdAt,
                         <h3>{name}</h3>
                         <p>{description}</p>
                         <div className="ps-btns">
-                           <Link to={`${previewLink}`}><button className='live'>Live preview</button></Link> 
-                           <Link to={`${sourceLink}`}><button className='code'>Source code</button></Link>
+                           <Link to={`${previewLink}`} target='_blank'><button className='live'>Live preview</button></Link> 
+                           <Link to={`${sourceLink}`} target='_blank'><button className='code'>Source code</button></Link>
                         </div>
                     </div>
                     <div className="pst-right">
