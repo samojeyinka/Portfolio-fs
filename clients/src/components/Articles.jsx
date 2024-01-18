@@ -40,7 +40,7 @@ const Articles = () => {
       <h2>Writing on software development, project building, 
         and the technology industry.
         </h2>
-        <p>All of my long-form thoughts on programming, leadership, software development, and more, collected in 
+        <p>All of my long-form thoughts on programming, Projects, software development, and more, collected in 
           chronological order.</p>
 
           <div className="articles-flex">

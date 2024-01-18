@@ -10,6 +10,8 @@ const Articles = () => {
     <>
     <Header/>
     <ArticlesPart/>
+    <br/>
+    <br/>
     <Footer/>
     </>
   )

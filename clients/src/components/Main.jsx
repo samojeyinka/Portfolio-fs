@@ -103,7 +103,7 @@ const Main = () => {
                             </div>
                             
                         </div>
-                        <Link to={'https://docs.google.com/document/d/1Qlf4hD-5coDID9DtgRSc6YfbCPnI8Yg-CSI6-Dn6xHg'} target='_blank'><button className="cv-btn">View CV <BiArrowFromTop/></button></Link>
+                        <Link to={'https://drive.google.com/file/d/1ECXIvh145GG7hlR6I-zRII3D1zVJWNWI/view?usp=sharing'} target='_blank'><button className="cv-btn">View CV <BiArrowFromTop/></button></Link>
                     </div>
                 </div>
             </div>
