@@ -1,8 +1,13 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const EditArticle = () => {
+
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [alert, setAlert] = useState('');
+  const navigate = useNavigate();
 
 
   // Extract the id number from the link
@@ -10,14 +15,23 @@ const EditArticle = () => {
   const paramSegment = window.location.pathname.split('/');
   const indexOf = paramSegment.indexOf('edit') + 1;
   const id =  paramSegment[indexOf].replace(/\D/g, '');
-
+  console.log(id);
 //********************//
 
+const fectArticle = async () => {
+  try {
+    const res = await axios.get(`http://localhost:3000/api/v1/articles/${id}`);
+    setTitle(res.data.title);
+    setContent(res.data.content);
+  } catch (error) {
+    
+  }
+}
 
-  console.log(id);
 
-  const [alert, setAlert] = useState('');
-  const navigate = useNavigate();
+useEffect(() => {
+  fectArticle();
+},[id])
 
   const handleSubmit = async (e) => {
 
@@ -59,12 +73,17 @@ const EditArticle = () => {
       <form onSubmit={(e) => handleSubmit(e)}>
         <div className="form-group">
           <label htmlFor="name">Title</label>
-          <input type="title" className="form-control" id="title" aria-describedby="name" placeholder="Enter article title" />
+          <input type="title" className="form-control" id="title" aria-describedby="name"
+          value={title}
+          onChange={e => setTitle(e.target.value)} />
         </div>
 
         <div className="form-group">
           <label htmlFor="content">Content</label>
-          <input type="content" className="form-control" id="content" placeholder="Article title" />
+          <input type="content" className="form-control" id="content" 
+          value={content}
+          onChange={e => setContent(e.target.value)}
+          />
         </div>
 
         <button type="submit" className="btn btn-primary mt-3">Submit</button>
