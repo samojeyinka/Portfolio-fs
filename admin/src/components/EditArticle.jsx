@@ -5,8 +5,14 @@ import axios from 'axios';
 const EditArticle = () => {
 
 
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
+  // Extract the id number from the link
+  
+  const paramSegment = window.location.pathname.split('/');
+  const indexOf = paramSegment.indexOf('edit') + 1;
+  const id =  paramSegment[indexOf].replace(/\D/g, '');
+
+//********************//
+
 
   console.log(id);
 
@@ -46,22 +52,22 @@ const EditArticle = () => {
   return (
     <section className="article-form container">
       <h3 className="text-white">Update Article</h3>
-      <div class={alert ?"alert alert-primary" : " "} role="alert">
+      <div className={alert ?"alert alert-primary" : " "} role="alert">
       <p>{alert}</p>
       </div>
      
       <form onSubmit={(e) => handleSubmit(e)}>
-        <div class="form-group">
-          <label for="name">Title</label>
-          <input type="title" class="form-control" id="title" aria-describedby="name" placeholder="Enter article title" />
+        <div className="form-group">
+          <label htmlFor="name">Title</label>
+          <input type="title" className="form-control" id="title" aria-describedby="name" placeholder="Enter article title" />
         </div>
 
-        <div class="form-group">
-          <label for="content">Content</label>
-          <input type="content" class="form-control" id="content" placeholder="Article title" />
+        <div className="form-group">
+          <label htmlFor="content">Content</label>
+          <input type="content" className="form-control" id="content" placeholder="Article title" />
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        <button type="submit" className="btn btn-primary mt-3">Submit</button>
 
       </form>
 
