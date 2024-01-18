@@ -1,25 +1,19 @@
-
-
-
-
-
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 
-body{
+body {
     font-family: sans-serif;
     background: #000 !important;
     color: #fff;
 }
 
 
-button{
+button {
     padding: .5rem 2rem;
     color: #fff;
     background: rgb(43, 43, 151);
@@ -29,26 +23,26 @@ button{
     cursor: pointer;
 }
 
-.app{
+.app {
     width: 100%;
     max-width: 1920px;
     height: 100%;
 }
 
-.welcome{
+.welcome {
     margin-top: 4rem;
 }
 
-.welcome-box{
-text-align: center;
-padding: 1rem;
-width: 60%;
-background: #2a26267d;
-margin: auto;
-border: 2px solid #2a26267d;
+.welcome-box {
+    text-align: center;
+    padding: 1rem;
+    width: 60%;
+    background: #2a26267d;
+    margin: auto;
+    border: 2px solid #2a26267d;
 }
 
-.welcome-box input{
+.welcome-box input {
     width: 100%;
     padding: 1rem;
     background: #2a26267d;
@@ -57,13 +51,13 @@ border: 2px solid #2a26267d;
     color: #fff;
 }
 
-.welcome button{
+.welcome button {
     width: 100%;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.alert{
+.alert {
     padding: .4rem;
     margin: auto;
     width: fit-content;
@@ -72,14 +66,15 @@ border: 2px solid #2a26267d;
     overflow: hidden;
 }
 
-.dashboard{
-    background: #000; 
+.dashboard {
+    background: #000;
 }
-.d-con{
+
+.d-con {
     border-top: 2px solid #2a26267d;
 }
 
-.nav{
+.nav {
     padding-top: 1rem;
     background: #2a26267d;
     width: 20%;
@@ -87,31 +82,31 @@ border: 2px solid #2a26267d;
     gap: 2rem;
 }
 
-.nav .nav-link{
+.nav .nav-link {
     text-align: left;
-   font-size: 1.2rem;
-   font-weight: 600;
-   color: #fff;
-} 
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
 
 
-.dashboard .tab-content{
+.dashboard .tab-content {
     width: 80%;
 }
 
 
 @media screen and (max-width: 768px) {
-    .welcome-box{
+    .welcome-box {
         width: 90%;
-        }
+    }
 }
 
 
 
 
 
-.form-group label{
-color: #fff;
-font-size: 1.1rem;
-font-weight: 600;
+.form-group label {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
 }

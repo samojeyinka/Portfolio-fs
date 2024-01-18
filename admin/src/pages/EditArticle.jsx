@@ -4,7 +4,7 @@ import EditArticlePart from '../components/EditArticle'
 const EditArticle = () => {
   return (
     <>
-    <EditArticlePart/>
+      <EditArticlePart />
     </>
   )
 }

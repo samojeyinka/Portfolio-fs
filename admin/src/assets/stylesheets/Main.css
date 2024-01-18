@@ -86,117 +86,6 @@
     color: var(--tertiary-color);
   }
   
-  .right-side-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .right-side .contact{
-    padding:2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 1rem;
-  }
-  .right-side .contact .ct-top,.w-top{
-    display: flex;
-    align-items: center;
-    gap: .6rem;
-  }
-  
-  
-  
-  .right-side .ct-icon, .w-icon{
-    font-size: 1.5rem;
-    color: var(--text-low);
-    opacity: .9;
-  }
-  
-  .right-side .contact .ct-top h4{
-    color: var(--text-high);
-  }
-  
-  .right-side .contact p{
-    padding: 1rem 0;
-    font-size: .9rem;
-    width: 80%;
-  }
-  
-  .email-actions{
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .email-actions input{
-    padding: .7rem;
-    width: 80%;
-    background: var(--partial-color);
-    border: 1px solid var(--border-color);
-    outline: none;
-    color: var(--text-high);
-    border-radius: .4rem;
-  }
-  
-  .email-actions button{
-    background: var(--partial-color);
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: .4rem;
-    color: var(--text-high);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
-  }
-  
-  .right-side .work{
-    padding: 2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 1rem;
-  }
-  
-  .right-side .w-flex{
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .right-side .work-box{
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
-   
-  }
-  
-  .wb-left{
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-  }
-  
-  .wb-left b{
-    font-size: 1.05rem;
-    color: var(--text-high);
-  }
-  
-  .wb-left small{
-    font-size: .9rem;
-    color: var(--text-low);
-  }
-  
-  .wb-right p{
-    font-size: .9rem;
-    color: var(--text-low);
-  }
-  
-  .work .cv-btn{
-    font-size: 1.1rem;
-    color: var(--text-high);
-    width: 100%;
-    border-radius:.4rem ;
-    background: var(--partial-color);
-    font-weight: 700;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
-  }
-  
   @media screen and (max-width:900px){
     .main{
       width: 90%;
@@ -209,8 +98,5 @@
     }
     .main-flex{
      flex-direction: column;
-    }
-    .right-side .work{
-      margin-bottom: 3rem;
     }
   }

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import ArticleShowPart from '../components/ArticleShow';
 import '../assets/stylesheets/ArticleShow.css';
@@ -20,7 +20,7 @@ const ArticleShow = () => {
     try {
       const res = await axios.get(`http://localhost:3000/api/v1/articles/${id}`);
       const article = res.data;
-      const {title,content,created_at} = article;
+      const { title, content, created_at } = article;
       setTitle(title);
       setContent(content);
       setCreatedAt(created_at);
@@ -28,21 +28,21 @@ const ArticleShow = () => {
     } catch (error) {
       console.error(error)
     }
-}
+  }
 
-useEffect(() => {
-getArticle();
-}); 
+  useEffect(() => {
+    getArticle();
+  });
 
 
   return (
     <section className="show-articles text-white">
-     
-    <ArticleShowPart 
-    createdAt={createdAt}
-    title={title}
-    content={content}
-    />
+
+      <ArticleShowPart
+        createdAt={createdAt}
+        title={title}
+        content={content}
+      />
 
     </section>
   )

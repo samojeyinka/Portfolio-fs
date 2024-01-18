@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
@@ -13,7 +11,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-       <Route index element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/projects/:id" element={<ProjectShow />} />
       <Route path="/projects/edit/:id" element={<EditProject />} />
@@ -24,11 +22,11 @@ const router = createBrowserRouter(
 )
 
 function App() {
- 
+
 
   return (
     <div className="app">
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   )
 }
