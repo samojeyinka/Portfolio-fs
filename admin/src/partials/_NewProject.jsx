@@ -22,7 +22,8 @@ const _NewProject = ({ alert, handleSubmit }) => {
 
           <div className="form-group">
             <label htmlFor="details">Details</label>
-            <input type="details" className="form-control" id="details" placeholder="Project full details" />
+            <textarea className="form-control" id="details" placeholder="Project full details"
+             rows="10"></textarea>
           </div>
 
           <div className="form-group bg-light mt-3 p-2">

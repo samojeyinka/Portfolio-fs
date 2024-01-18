@@ -17,7 +17,11 @@ const _NewArticle = ({ alert, handleSubmit }) => {
 
                     <div className="form-group">
                         <label htmlFor="content">Content</label>
-                        <input type="content" className="form-control" id="content" placeholder="Article title" />
+                        <textarea className="form-control" id="content"
+                         rows="10"
+                         placeholder="Article Content"
+                         ></textarea>
+                  
                     </div>
 
                     <button type="submit" className="btn btn-primary mt-3">Submit</button>
