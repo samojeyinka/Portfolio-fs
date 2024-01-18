@@ -52,7 +52,7 @@ const Articles = () => {
             </div>) :
             
             articles.map(article => (
-                <Link to={`${article.title.replace(/ /g, '-')}?id=${article.id}`}>
+                <Link to={`/articles/${article.title.replace(/ /g, '-')}?id=${article.id}`}>
                  <div className="article-box">
                  <div className="article-date">
                    <p>{formatDate(article.created_at)}</p>
