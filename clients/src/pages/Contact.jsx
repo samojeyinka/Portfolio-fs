@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer'
 import ContactPart from '../components/Contact';
 import Header from '../components/Header'
-import '../assets/stylesheets/contact.css'
+import '../assets/stylesheets/Contact.css'
 
 const Contact = () => {
   return (
