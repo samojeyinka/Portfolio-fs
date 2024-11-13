@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {BiEnvelope, BiArrowFromTop, BiNetworkChart} from 'react-icons/bi'
 import noimage from '../assets/images/noimage.jpeg'
 import { Link } from 'react-router-dom'
-import '../assets/stylesheets/main.css'
+import '../assets/stylesheets/Main.css'
 import axios from 'axios'
 
 const Projects = () => {
